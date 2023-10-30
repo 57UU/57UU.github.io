@@ -1,5 +1,5 @@
 ---
-title: 适用于Github-Action的React配置文件
+title: 适用于React的Github-Action配置文件
 date: 2023-10-30 18:44:41
 tags: 
     - [Coding]
