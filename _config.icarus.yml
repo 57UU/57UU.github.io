@@ -117,7 +117,7 @@ navbar:
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: © 2023
+    copyright: © 2023 57U
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:
@@ -164,9 +164,9 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
-    # Disqus shortname
-    shortname: ''
+    type: changyan
+    app_id: cywXdUc55
+    conf: prod_71481c6e32373765328160e5d46a5f1f
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
