@@ -50,6 +50,8 @@ jobs:
 ```
 有些东西我感觉是多余了，但是既然已经可以成功运行了，那最好还是不要动了
 
+对了，还要设置github page从gh-pages分支中部署
+
  [React自动构建项目仓库](https://github.com/57UU/LiteratureMonth13)
 
  [文件示例](https://github.com/57UU/LiteratureMonth13/blob/master/.github/workflows/node.js.yml)
