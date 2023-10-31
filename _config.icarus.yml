@@ -29,11 +29,11 @@ head:
         icons:
             -
                 # The path to the image file
-                src: ''
+                src: '/img/favicon.svg'
                 # A string containing space-separated image dimensions
-                sizes: ''
+                sizes: 'any'
                 # A hint as to the media type of the image
-                type: 
+                type: image/svg
     # Open Graph metadata
     # https://hexo.io/docs/helpers.html#open-graph
     open_graph:
