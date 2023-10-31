@@ -276,8 +276,8 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            十三月文学: https://57uu.github.io/LiteratureMonth13/
-            Shape Weather: https://57uu.github.io/Shape_Weather/
+            十三月文学: /LiteratureMonth13/
+            Shape Weather: /Shape_Weather/
             Silenzio's Blog: https://silenzio111.github.io/
     # Categories widget configurations
     -
