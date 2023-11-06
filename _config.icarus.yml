@@ -201,7 +201,7 @@ donates:
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: 'wechat.png'
+        qrcode: '/image/wechat.png'
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 #share:
