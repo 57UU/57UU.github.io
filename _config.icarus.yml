@@ -17,14 +17,14 @@ head:
         # when there is not enough space to display full name
         short_name: uBlog
         # The start URL of the web application
-        start_url: https://57uu.github.io
+        start_url: .
         # The default theme color for the application
         theme_color: "#3273dc"
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
         background_color: "#3273dc"
         # The preferred display mode for the website
-        display: any
+        display: standalone
         # Image files that can serve as application icons for different contexts
         icons:
             -
@@ -33,7 +33,7 @@ head:
                 # A string containing space-separated image dimensions
                 sizes: 'any'
                 # A hint as to the media type of the image
-                type: image/svg
+                #type: image/svg
     # Open Graph metadata
     # https://hexo.io/docs/helpers.html#open-graph
     open_graph:
@@ -179,7 +179,7 @@ donates:
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/57UU/57UU.github.io/main/1698667756716(1).jpg'
+        qrcode: '/image/alipay.jpg'
     # "Buy me a coffee" donate button configurations
     #-
         #type: buymeacoffee
@@ -201,7 +201,7 @@ donates:
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/57UU/57UU.github.io/main/1698667756724(1).png'
+        qrcode: 'wechat.png'
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 #share:
