@@ -8,7 +8,7 @@ tags:
 ---
 
 最近想给react配置一个自动构建，在网上查(chao)阅(xi)了许多资料,作为一个缝合怪，终于是把yml文件配置好了
-
+<!--more-->
 ```yml
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs

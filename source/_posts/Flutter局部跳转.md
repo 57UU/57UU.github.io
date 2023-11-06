@@ -6,6 +6,7 @@ tags: [Coding,Flutter]
 
 
 `flutter`局部跳转的思路其实很简单,只需要在一个控件外创建一个根路由,仿照安卓的命名,我给这个路由起名叫`Fragment`
+<!--more-->
 ```dart
 class Fragment extends StatelessWidget {
   final Widget child;
