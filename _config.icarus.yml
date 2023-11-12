@@ -117,7 +117,7 @@ navbar:
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: © 2023 57U
+    copyright: 57U‘s Blog
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:
@@ -163,10 +163,10 @@ search:
     index_pages: true
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-comment:
-    type: changyan
-    app_id: cywXdUc55
-    conf: prod_71481c6e32373765328160e5d46a5f1f
+#comment:
+    #type: changyan
+    #app_id: cywXdUc55
+    #conf: prod_71481c6e32373765328160e5d46a5f1f
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -218,7 +218,7 @@ sidebar:
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
