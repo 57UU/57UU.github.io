@@ -43,5 +43,5 @@ jobs:
 ## 由于Github-pages的特殊情况,还需要添加.nojekyll文件
 
 在第一次生成完成后，转到gh-pages分支，添加.nojekyll空文件
-如图所示
-![image](1.png)
+
+![如图所示](1.png)
