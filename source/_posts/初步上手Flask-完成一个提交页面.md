@@ -11,7 +11,7 @@ python用来写服务端非常简单
 
 其实前端核心也就是这句话
 ```js
-fetch("/add?add=" + t.value)
+fetch("/add?add=" + value)
 ```
 和服务端的这句话
 ```python
