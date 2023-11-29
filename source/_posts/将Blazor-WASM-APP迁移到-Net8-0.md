@@ -10,6 +10,7 @@ tags:
 ```xml
 <TargetFramework>net8.0</TargetFramework>
 ```
+<!--more-->
 ## 2
 然后在Nuget包管理器中升级
 
