@@ -277,10 +277,11 @@ widgets:
         # Names and URLs of the sites
         links:
             Shape Weather: /Shape_Weather/
-            创高体育理论助手: /AnswerForPE_Web/
+            创高体育理论助手: https://the-brotherhood-of-scu.github.io/AnswerForPE_Web/
             十三月文学: /LiteratureMonth13/
+            锐评: https://the-brotherhood-of-scu.github.io/herui_saying/
             Silenzio's Blog: https://silenzio111.github.io/
-            锐言睿语: /herui_saying/
+            
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
