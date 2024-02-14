@@ -6,7 +6,7 @@ tags: Utility
 
 
 本文采用DiskGenius作为主要工具
-<!---more--->
+<!--more-->
 注意：似乎只有DiskGenius专业版有此功能
 
 ## Step1
