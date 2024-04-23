@@ -6,7 +6,7 @@ tags: CPP
 
 首先这个玩意需要安装`Rust`开发环境
 <https://www.rust-lang.org/learn/get-started>
-
+<!--more-->
 然后需要`Rust`的某个工具链
 ```cmd
 rustup target add --toolchain stable-x86_64-pc-windows-msvc x86_64-pc-windows-gnu
