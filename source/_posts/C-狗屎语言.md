@@ -1,7 +1,7 @@
 ---
 title: C++:狗屎语言
 date: 2024-05-02 18:43:00
-tags: Coding
+tags: [Coding,CPP]
 ---
 
 这段时间在写CPP大作业，才算真正被CPP恶心到
