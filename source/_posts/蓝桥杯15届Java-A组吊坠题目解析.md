@@ -35,17 +35,12 @@ tags: [Coding,Algorithm,Java]
 # 构建边权数据结构
 这个比较简单，就不解释了
 ```java
-class Edge implements Comparable<Edge>{
+class Edge{
     int index1,index2,value;//index1 must < index2
     public Edge(int index1,int index2,int value){
         this.index2=index2;
         this.index1=index1;
         this.value=value;
-    }
-
-    @Override
-    public int compareTo(Edge o) {
-        return Integer.compare(this.value,o.value);
     }
 }
 
@@ -140,11 +135,6 @@ class Edge implements Comparable<Edge>{
         this.index2=index2;
         this.index1=index1;
         this.value=value;
-    }
-
-    @Override
-    public int compareTo(Edge o) {
-        return Integer.compare(this.value,o.value);
     }
 }
 
