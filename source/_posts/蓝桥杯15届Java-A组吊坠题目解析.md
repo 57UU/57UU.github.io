@@ -68,12 +68,25 @@ for(int i=0;i<words_count;i++){
 int total=0;
 for(var i:list){
     if(root[i.index1]!=root[i.index2]){//如果两个节点对应的根节点不同，表明连接这两个节点不会形成环
-        root[i.index2]=getRoot(i.index1,root);//将这两个节点连上，默认将index较小的作为根
+        root[i.index2]=getRoot(i.index1,root);//将这两个节点连上，默认将index较小的作为根,并且保证每个位置都是对应的根节点
         total+=i.value;
     }
 }
 System.out.println(total);//输出
 ```
+其中`getRoot()`函数返回这个节点对应的根节点，以下标较小的作为根
+```java
+static int getRoot(int index,int[] roots){
+    return index==roots[index]?index:getRoot(roots[index],roots);
+}
+```
+但其实仔细分析，不难发现以上代码每一步都能保证“root数组每个位置对应的都是根节点”，因此，`getRoot`函数可以简化如下
+```java
+static int getRoot(int index,int[] roots){
+    return roots[index];
+}
+```
+
 
 # 总代码
 ```java
@@ -103,17 +116,13 @@ public class Main {
         int total=0;
         for(var i:list){
             if(root[i.index1]!=root[i.index2]){
-                root[i.index2]=getRoot(i.index1,root);//默认将index较小的作为根
+                root[i.index2]=root[index];//默认将index较小的作为根
                 total+=i.value;
             }
         }
         System.out.println(total);
 
     }
-     static int getRoot(int index,int[] roots){
-        return index==roots[index]?index:getRoot(roots[index],roots);
-    }
-
     static int similarity(String a, String b) {
         a=a+a;
         int[][] dp=new int[a.length()+1][b.length()+1];
@@ -129,7 +138,7 @@ public class Main {
         return dp[a.length()][b.length()];
     }
 }
-class Edge implements Comparable<Edge>{
+class Edge {
     int index1,index2,value;//index1 must < index2
     public Edge(int index1,int index2,int value){
         this.index2=index2;
