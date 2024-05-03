@@ -1,7 +1,10 @@
 ---
 title: 蓝桥杯15届Java-A组吊坠题目解析
 date: 2024-05-02 12:53:55
-tags: [Coding,Algorithm,Java]
+tags: 
+    - [Coding]
+    - [Algorithm]
+    - [Java]
 ---
 
 当时考蓝桥杯(java)的时候，也没怎么学过算法，一看这道题涉及到了图论，直接就放弃了。现在回过头来学了下，写个解析。

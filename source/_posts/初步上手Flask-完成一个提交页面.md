@@ -1,7 +1,9 @@
 ---
 title: 初步上手Flask 完成一个提交页面
 date: 2023-11-29 09:44:16
-tags: [Coding,Python]
+tags: 
+    - [Coding]
+    - [Python]
 ---
 
 最近需要通过网络收集一些资料，又不想用腾讯文档这些臃肿的东西，就自己写了一个Web服务来收集信息

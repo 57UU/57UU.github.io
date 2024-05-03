@@ -1,7 +1,9 @@
 ---
 title: c++UI库slint上手体验
 date: 2024-03-25 21:49:39
-tags: CPP
+tags: 
+    - CPP
+    - Coding
 ---
 
 首先这个玩意需要安装`Rust`开发环境
