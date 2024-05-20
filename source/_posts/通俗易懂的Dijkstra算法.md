@@ -47,4 +47,83 @@ $D_A(X)=min\{D_A(X),D_A(N)+C(N,X)\}$
 
 注意，每次迭代时找出的`未被搜索的`、`最短的`路径就是$D_A(X)$的最短路径，所以不需要再次更新数值，上图中使用减号`-`表示。
 
+## Rust实现
+
+```rust
+use std;
+
+static INF: usize =0xFFF;
+
+fn main() {
+    let mut graph:Vec<[usize; 5]>=vec![
+        [0,8,2,18, INF],
+        [0,0, INF, INF,15],
+        [0,0,0,9, INF],
+        [0,0,0,0,11],
+        [0,0,0,0,0]
+    ];
+    
+    //上三角阵，转化为对称矩阵
+    for i in 0..5{
+        for j in 0..i{
+            graph[i][j]=graph[j][i];
+        }
+    }
+    let mut dij =Dijkstra::new(graph);
+    let min_path=dij.find(0,4);
+    print!("min path:{}",min_path)
+
+}
+struct Dijkstra{
+    graph:Vec<[usize; 5]>,
+    not_find:Vec<usize>,
+    distance:Vec<usize>,
+}
+
+impl Dijkstra {
+    fn new(graph: Vec<[usize; 5]>)->Dijkstra{
+        return  Dijkstra{
+            graph,
+            not_find: vec![0,1,2,3,4,],
+            distance: vec![INF,INF,INF,INF,INF,],
+        };
+    }
+    fn d(&self, dst:usize) ->usize{
+        self.distance[dst]
+    }
+    fn c(&self, src:usize, dst:usize) ->usize{
+        self.graph[src][dst]
+    }
+    fn init(&mut self, src:usize){
+        for i in 0..5{
+            self.distance[i]=self.c(src, i as usize);
+        }
+    }
+    fn find(&mut self, src:usize, dst:usize)->usize{
+        self.init(src);//initialize
+        for _i in 0..5{
+            let mut min:usize=self.not_find[0];
+            let mut index_at_not_find =0;
+            let mut index=0;
+            for node in &self.not_find{
+                if self.distance[*node]<self.distance[min]{
+                    min= *node;
+                    index_at_not_find=index;
+                }
+                index += 1;
+            }
+            self.not_find.remove(index_at_not_find);
+
+            for node in &self.not_find{
+                if self.d(min)+self.c(min, *node)<self.d(*node) {
+                    self.distance[*node]=self.d(min)+self.c(min, *node);
+                }
+            }
+        }
+        return self.distance[dst];
+
+    }
+}
+```
+
 
