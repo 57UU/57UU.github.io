@@ -2,7 +2,8 @@
 title: 通俗易懂的Dijkstra算法
 date: 2024-05-14 20:28:53
 tags: 
-- Coding,Rust
+- Coding
+- Rust
 ---
 
 看了下网上的一些讲的这个算法，有的说的太复杂了
