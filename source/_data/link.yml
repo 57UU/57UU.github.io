@@ -1,0 +1,39 @@
+- class_name: 博客友链
+  class_desc: 值得一看的博客
+  link_list:
+    - name: Jeanhua's Blog
+      descr: ""
+      link: https://www.blog.jeanhua.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=2207739460&src_uin=www.jlwz.cn&s=0
+    - name: Silenzio's Blog
+      descr: ""
+      link: https://silenzio111.github.io/
+      avatar: https://silenzio111.github.io/img/fluid.png
+
+
+- class_name: 实用小工具
+  class_desc: 我参与开发的Web应用
+  link_list:
+    - name: Shape Weather
+      link: /Shape_Weather/
+      avatar: https://57uu.github.io/Shape_Weather/favicon.png
+      descr: 轻量级的天气应用
+    - name: 锐评
+      avatar: https://the-brotherhood-of-scu.github.io/herui_saying/favicon.ico
+      link: https://the-brotherhood-of-scu.github.io/herui_saying/
+      descr: HeRui语录
+    - name: 计算机网络
+      avatar: https://the-brotherhood-of-scu.github.io/network_docs/logo.png
+      link: https://the-brotherhood-of-scu.github.io/network_docs/
+      descr: 计算机网络相关资料
+    - name: 创高体育理论助手
+      avatar: https://the-brotherhood-of-scu.github.io/AnswerForPE_Web/favicon.png
+      link: https://the-brotherhood-of-scu.github.io/AnswerForPE_Web/
+      descr: 创高体育理论答案查找器
+
+- class_name: 本网站用到的框架
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、簡單且強大的網誌框架
