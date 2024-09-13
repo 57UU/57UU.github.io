@@ -3,7 +3,7 @@ subtitle: ''
 description: ''
 keywords: null
 author: 57U
-language: en
+language: zh-CN
 timezone: ''
 url: https://57uu.github.io
 permalink: ':year/:month/:day/:title/'
@@ -62,6 +62,7 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: icarus
+#theme: icarus
+theme: butterfly
 deploy:
   type: ''
