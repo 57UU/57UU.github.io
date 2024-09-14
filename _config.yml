@@ -66,3 +66,6 @@ ignore: null
 theme: butterfly
 deploy:
   type: ''
+markdown:
+    plugins:
+      - '@renbaoshuo/markdown-it-katex'

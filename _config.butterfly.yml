@@ -16,7 +16,7 @@ menu:
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-   Link: /link/ || fas fa-link
+   友链: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
@@ -48,13 +48,13 @@ avatar:
   effect: false
 
 # Disable all banner image
-disable_top_img: true
+disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: image/p4.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: image/p1.jpg
 
 # The banner image of archive page
 archive_img:
@@ -131,7 +131,7 @@ anchor:
   click_to_scroll: false
 
 # figcaption (圖片描述文字)
-photofigcaption: false
+photofigcaption: true
 
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
@@ -155,7 +155,7 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -165,10 +165,10 @@ reward:
   enable: true
   text:
   QR_code:
-     - img: /image/wechat.png
+     - img: /image/sponsor/wechat.png
        link:
        text: wechat
-     - img: /image/alipay.jpg
+     - img: /image/sponsor/alipay.jpg
        link:
        text: alipay
 
@@ -183,7 +183,7 @@ post_edit:
 # Related Articles
 related_post:
   enable: true
-  limit: 6 # Number of posts displayed
+  limit: 3 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # post_pagination (分頁)
@@ -207,8 +207,8 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2020
-  custom_text:
+    since: 2023
+  custom_text: 
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -230,7 +230,7 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
+      text: My Github
       link: https://github.com/57UU
   card_announcement:
     enable: false
@@ -645,7 +645,7 @@ text_align_justify: false
 background:
 
 # Footer Background
-footer_bg: false
+footer_bg: /image/p3.jpg
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -672,7 +672,7 @@ activate_power_mode:
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
