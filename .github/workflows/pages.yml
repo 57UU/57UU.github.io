@@ -4,7 +4,7 @@ on:
   workflow_dispatch: 
   push:
     branches:
-      - webpage  # default branch
+      - main  # default branch
 
 jobs:
   build:
