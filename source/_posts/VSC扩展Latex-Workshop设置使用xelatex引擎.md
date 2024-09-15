@@ -17,7 +17,7 @@ tags:
 
 如下图所示
 
-![打开扩展设置](1.png)
+![打开扩展设置](1.avif)
 ![设置forceRecipeUsage为false](2.png)
 
 

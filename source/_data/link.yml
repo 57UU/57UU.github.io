@@ -15,7 +15,7 @@
   class_desc: 我参与开发的Web应用
   link_list:
     - name: Shape Weather
-      link: /Shape_Weather/
+      link: https://57uu.github.io/Shape_Weather/
       avatar: https://57uu.github.io/Shape_Weather/favicon.png
       descr: 轻量级的天气应用
     - name: 锐评
@@ -30,10 +30,3 @@
       avatar: https://the-brotherhood-of-scu.github.io/AnswerForPE_Web/favicon.png
       link: https://the-brotherhood-of-scu.github.io/AnswerForPE_Web/
       descr: 创高体育理论答案查找器
-
-- class_name: 本网站用到的框架
-  link_list:
-    - name: Hexo
-      link: https://hexo.io/zh-tw/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、簡單且強大的網誌框架

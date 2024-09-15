@@ -233,8 +233,8 @@ aside:
       text: My Github
       link: https://github.com/57UU
   card_announcement:
-    enable: false
-    content: 57U's Blog
+    enable: true
+    content: 如果您在天朝访问缓慢，可以尝试使用以下链接： <a href="https://57uu.pages.dev" color="blue">https://57uu.pages.dev/</a> (Powered by Cloudflare)
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
