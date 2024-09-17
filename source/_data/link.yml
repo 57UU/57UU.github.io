@@ -30,3 +30,7 @@
       avatar: https://the-brotherhood-of-scu.github.io/AnswerForPE_Web/favicon.png
       link: https://the-brotherhood-of-scu.github.io/AnswerForPE_Web/
       descr: 创高体育理论答案查找器
+    - name: 真值表LaTeX表格生成器
+      avatar: https://57uu.github.io/truth_table_generator/logo192.png
+      link: https://57uu.github.io/truth_table_generator/
+      descr: 一键生成LaTeX真值表
