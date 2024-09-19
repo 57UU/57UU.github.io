@@ -16,7 +16,7 @@
   link_list:
     - name: Shape Weather
       link: https://57uu.github.io/Shape_Weather/
-      avatar: https://57uu.github.io/Shape_Weather/favicon.png
+      avatar: https://57uu.github.io/Shape_Weather/icons/Icon-maskable-192.png
       descr: 轻量级的天气应用
     - name: 锐评
       avatar: https://the-brotherhood-of-scu.github.io/herui_saying/favicon.ico
@@ -33,4 +33,12 @@
     - name: 真值表表格生成器
       avatar: https://57uu.github.io/truth_table_generator/logo192.png
       link: https://57uu.github.io/truth_table_generator/
-      descr: 一键生成LaTeX/Markdown真值表
+      descr: 一键复制真值表到LaTeX/Markdown/Word
+
+- class_name: 友情链接
+  class_desc: 不错的网站
+  link_list:
+    - name: 四川大学资源站
+      avatar: https://www.res.jeanhua.cn/wp-content/uploads/2024/07/%E6%A0%A1%E5%BE%BD.png
+      link: https://www.res.jeanhua.cn/
+      descr: 四川大学资源分享站  
