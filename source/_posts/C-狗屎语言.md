@@ -44,7 +44,7 @@ E:/Projects//src/Utils.h:79:35: error: variable 'std::istringstream iss' has ini
 ```
 这是我没有include这个文件的报错😅
 
-## 意义不明的缩写
+# 意义不明的缩写
 我问下大家`cout`中的`c`是什么意思，`c++`、`console`? 哈哈，是`charactor`😅.
 
 什么time缩写成tm，可以看下面这个表
@@ -57,7 +57,7 @@ E:/Projects//src/Utils.h:79:35: error: variable 'std::istringstream iss' has ini
 
 这些糟糕透顶的缩写遍地都是，就不举例了
 
-## 糟糕的语法设计
+# 糟糕的语法设计
 那些特殊语法使得程序十分丑陋，我们常见的语法如下：
 
 ```
@@ -87,7 +87,7 @@ int main(){
 i=(++i)+(++i)+(++i)+(++i);
 ```
 
-## [引经据典](https://medium.com/nerd-for-tech/linus-torvalds-c-is-really-a-terrible-language-2248b839bee3)
+# [引经据典](https://medium.com/nerd-for-tech/linus-torvalds-c-is-really-a-terrible-language-2248b839bee3)
 
 <h3 align="center">C++ is really a terrible language!</h3>
 
