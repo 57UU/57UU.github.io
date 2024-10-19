@@ -22,7 +22,9 @@ tags:
 </script>
 
 <textarea id="code" style="width:80%;height:5rem;">
-(114514+114514)*(11-4+5/1-4)+(114*514+(114*51*4+(1145*(1+4)+11-4+5+1-4)))
+def get_num():
+    return (114514+114514)*(11-4+5/1-4)+(114*514+(114*51*4+(1145*(1+4)+11-4+5+1-4)))
+get_num()
 </textarea>
 
 <button onclick="callback()" style="background-color: #4CAF50;padding: 15px 32px;text-align: center;border-radius: 5px;">Run code</button>
@@ -48,7 +50,9 @@ Result:
 </script>
 
 <textarea id="code" style="width:80%;height:5rem;">
-(114514+114514)*(11-4+5/1-4)+(114*514+(114*51*4+(1145*(1+4)+11-4+5+1-4)))
+def get_num():
+    return (114514+114514)*(11-4+5/1-4)+(114*514+(114*51*4+(1145*(1+4)+11-4+5+1-4)))
+get_num()
 </textarea>
 
 <button onclick="callback()" style="background-color: #4CAF50;padding: 15px 32px;text-align: center;border-radius: 5px;">Run code</button>
@@ -57,3 +61,6 @@ Result:
 
 <p id="result"></p>
 ```
+
+# 一点解释
+其实就是加载了一个py的web实现，把代码丢到这个环境中跑。
