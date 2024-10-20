@@ -19,7 +19,7 @@
   class_desc: 我参与开发的Web应用
   link_list:
     - name: Shape Weather
-      link: https://57uu.github.io/Shape_Weather/
+      link: https://weather.57u.tech/
       avatar: https://57uu.github.io/Shape_Weather/icons/Icon-maskable-192.png
       descr: 轻量级的天气应用
     - name: 锐评
@@ -36,7 +36,7 @@
       descr: 创高体育理论答案查找器
     - name: 真值表表格生成器
       avatar: https://57uu.github.io/truth_table_generator/logo192.png
-      link: https://57uu.github.io/truth_table_generator/
+      link: https://truth-table.57u.tech/
       descr: 一键复制真值表到LaTeX/Markdown/Word
 
 - class_name: 不错的网站
