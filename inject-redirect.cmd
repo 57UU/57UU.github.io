@@ -1,0 +1,1 @@
+python redirect/modify.py public redirect/redirect.min.html

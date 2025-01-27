@@ -8,7 +8,39 @@ tags:
 # 引言
 最近`deepseek-r1`模型发布了，相关的技术细节也一同被发布。于是花了几天时间读了一下这篇论文*DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning*
 
-# 预备知识
+
+# 正文
+DeepSeek-R1-zero仅仅只使用了无监督的强化学习，就达到了相当高的水平。在深度学习高度依赖各种数据标记的大环境下，deepseek-r1-zero展现出了一种新的思路。
+
+这里引用原文：
+> our goal is to explore the potential of LLMs to develop reasoning capbility without any supervised data.
+
+## Reward建模
+
+reward设计有以下两处：
+- 正确奖励
+- 格式奖励
+
+### 正确奖励
+这里很有意思，只奖励结果。结果正确就满分，错误就得不到一点奖励。
+
+> we find that the neural reward model may suffer from reward hacking in the large-scale reinforcement learning process.
+
+如果奖励过程，很容易让神经网络学到骗分技巧，而不是真正的实力。
+
+对于编程题，也可以通过编译、运行，判断结果准确性。
+### 格式奖励
+因为模型需要将思考过程与最终结果分别输出，因此需要奖励模型的输出格式。
+
+## Train Input
+
+`训练模板`只要求模型产生一个思维链。不会显示的提醒模型进行反思、提示。
+
+##
+
+//TODO
+
+# 相关知识
 
 ## KL散度
 KL散度是一种衡量两个概率分布之间差异的方法。
@@ -70,30 +102,6 @@ $$
 
 该算法有点复杂，建议阅读[参考资料](#参考资料)
 
-# 正文
-DeepSeek-R1-zero仅仅只使用了无监督的强化学习，就达到了相当高的水平。在深度学习高度依赖各种数据标记的大环境下，deepseek-r1-zero展现出了一种新的思路。
-
-这里引用原文：
-> our goal is to explore the potential of LLMs to develop reasoning capbility without any supervised data.
-
-## Reward建模
-
-reward设计有以下两处：
-- 正确奖励
-- 格式奖励
-
-### 正确奖励
-这里很有意思，只奖励结果。结果正确就满分，错误就得不到一点奖励。
-
-> we find that the neural reward model may suffer from reward hacking in the large-scale reinforcement learning process.
-
-如果奖励过程，很容易让神经网络学到骗分技巧，而不是真正的实力。
-
-对于编程题，也可以通过编译、运行，判断结果准确性。
-### 格式奖励
-因为模型需要将思考过程与最终结果分别输出，因此需要奖励模型的输出格式。
-
-//TODO
 
 # 后记
 这篇论文其实还是很通俗易懂的，不仅英语表达很基础，论文中也没有晦涩难懂的概念，但又展现了出色的创造力与深度，很值得一看。
