@@ -35,7 +35,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: add redirect
-        run: ./inject-redirect.cmd
+        run: ./inject-redirect.sh
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
