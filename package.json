@@ -29,7 +29,7 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-butterfly": "^5.3.2",
     "hexo-theme-icarus": "^6.1.0",
-    "hexo-theme-landscape": "^1.0.0",
+    "hexo-theme-landscape": "^1.1.0",
     "katex": "^0.16.21"
   }
 }
