@@ -13,7 +13,10 @@
       descr: Crane_33A's Blog
       link: https://crane33a.github.io/blogs/
       avatar: https://avatars.githubusercontent.com/u/81063512
-
+    - name: 小鱼日记
+      descr: 川大优秀本科生
+      link: https://youweiyu.github.io/
+      avatar: https://avatars.githubusercontent.com/u/147398040?v=4
 
 - class_name: 实用小工具
   class_desc: 我参与开发的Web应用
