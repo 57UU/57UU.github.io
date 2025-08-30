@@ -12,6 +12,7 @@ def replace_html_content(directory, source_file):
         print(f"错误：源文件 '{source_file}' 不存在")
         return False
 
+    path=source_file
     # 读取源文件内容（二进制模式）
     try:
         with open(source_file, 'rb') as f:

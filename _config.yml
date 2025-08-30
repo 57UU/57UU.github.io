@@ -1,7 +1,7 @@
 title: 57U's Blog
 subtitle: ''
-description: ''
-keywords: null
+description: '57U的个人博客 | 专注于编程开发与前沿技术探索，分享编程实践与相关思考'
+keywords: '57U, 技术博客, 编程开发'
 author: 57U
 language: zh-CN
 timezone: ''
@@ -9,8 +9,8 @@ url: https://blog.57u.tech
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
-  trailing_index: true
-  trailing_html: true
+  trailing_index: false
+  trailing_html: false
 source_dir: source
 public_dir: public
 tag_dir: tags
