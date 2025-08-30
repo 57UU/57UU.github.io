@@ -12,10 +12,10 @@ def replace_html_content(directory, source_file):
         print(f"错误：源文件 '{source_file}' 不存在")
         return False
 
-    path=source_file
+    
     # 读取源文件内容（二进制模式）
     try:
-        with open(source_file, 'rb') as f:
+        with open(source_file, 'r',encoding="utf-8") as f:
             source_content = f.read()
     except Exception as e:
         print(f"读取源文件失败：{e}")
@@ -31,11 +31,26 @@ def replace_html_content(directory, source_file):
             if filename.lower().endswith(('.html', '.htm')):
                 file_path = os.path.join(root, filename)
                 try:
-                    # 写入新内容（二进制模式）
-                    with open(file_path, 'wb') as f:
-                        f.write(source_content)
-                    processed_files += 1
-                    print(f"已更新：{file_path}")
+                    # 读取目标HTML文件内容
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        html_content = f.read()
+                    
+                    # 找到body标签并替换内容
+                    body_start = html_content.find('<body>')
+                    body_end = html_content.find('</body>')
+                    
+                    if body_start != -1 and body_end != -1:
+                        # 保留body标签，只替换内容
+                        new_html = html_content[:body_start + 6] + source_content + html_content[body_end:]
+                        
+                        # 写回文件
+                        with open(file_path, 'w', encoding='utf-8') as f:
+                            f.write(new_html)
+                        
+                        processed_files += 1
+                        print(f"已更新：{file_path}")
+                    else:
+                        print(f"跳过 [{file_path}]：未找到body标签")
                 except Exception as e:
                     print(f"更新失败 [{file_path}]: {e}")
 
